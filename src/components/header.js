@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
           name
         }
         allWordpressWpApiMenusMenusItems(
-          filter: { slug: { eq: "main-menu" } }
+          filter: { slug: { eq: "main-navigation" } }
         ) {
           edges {
             node {
@@ -34,12 +34,46 @@ const Header = ({ siteTitle }) => (
         return item.slug
       })
       return (
-        <header style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <Link to="/">{siteTitle}</Link>
-          <ul style={{ display: 'flex', listStyle: 'none' }}>
+        <header
+          style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+            background: 'orange',
+          }}
+        >
+          <Link
+            to="/"
+            style={{
+              fontSize: 24,
+              color: 'white',
+              textDecoration: 'none',
+              fontFamily: 'sans-serif',
+            }}
+          >
+            {siteTitle}
+          </Link>
+          <ul
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              listStyle: 'none',
+              margin: 15,
+            }}
+          >
             {menu.items.map(item => (
-              <li key={item.title}>
-                <Link to={`/${item.slug}`}>{item.title}</Link>
+              <li key={item.title} style={{ margin: 0 }}>
+                <Link
+                  to={`/${item.slug}`}
+                  style={{
+                    padding: '0 15px',
+                    color: 'white',
+                    textDecoration: 'none',
+                    fontFamily: 'sans-serif',
+                  }}
+                >
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>
