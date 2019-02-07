@@ -5,25 +5,31 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby's Wordpress
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+A Gatsby starter with the Wordpress Rest API. This project pulls in a WordPress site's menus, posts, and pages to render them appropriately.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Requirements
+
+- Wordpress site must have [WP API Menus](https://wordpress.org/plugins/wp-rest-api-menus/) installed on WordPress site in order to pull in menus
+- GraphQL query in Header component needs to be changed to menu name to find the right menu
 
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Clone this repository locally
 
     ```sh
-    # create a new Gatsby site using the default starter
-    npx gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    git clone https://wordpress.org/plugins/wp-rest-api-menus/
     ```
 
-1.  **Start developing.**
+2.  **Change gatsby-config.js**
+
+Update the value for the baseUrl to match your WordPress URL
+
+3.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -32,7 +38,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+4.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
