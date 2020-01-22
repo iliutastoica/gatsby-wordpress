@@ -11,7 +11,7 @@
     "gatsby-plugin-offline": "^2.0.22",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-sharp": "^2.0.20",
-    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-source-filesystem": "^2.0.22",
     "gatsby-source-wordpress": "^3.0.33",
     "gatsby-transformer-sharp": "^2.1.13",
     "path": "^0.12.7",
