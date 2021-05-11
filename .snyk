@@ -8,3 +8,7 @@ patch:
         patched: '2021-05-04T07:13:47.092Z'
     - gatsby > devcert > lodash:
         patched: '2021-05-04T07:13:47.092Z'
+    - gatsby-source-wordpress > deep-map > lodash:
+        patched: '2021-05-11T06:47:04.192Z'
+    - gatsby-source-wordpress > deep-map-keys > lodash:
+        patched: '2021-05-11T06:47:04.192Z'
