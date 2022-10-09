@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.19.0
+version: v1.25.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -12,3 +12,17 @@ patch:
         patched: '2021-05-11T06:47:04.192Z'
     - gatsby-source-wordpress > deep-map-keys > lodash:
         patched: '2021-05-11T06:47:04.192Z'
+    - gatsby-plugin-offline > lodash:
+        patched: '2022-10-09T23:13:08.810Z'
+    - gatsby-plugin-offline > cheerio > lodash:
+        patched: '2022-10-09T23:13:08.810Z'
+    - gatsby > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2022-10-09T23:13:08.810Z'
+    - gatsby > babel-plugin-lodash > lodash:
+        patched: '2022-10-09T23:13:08.810Z'
+    - gatsby > devcert > lodash:
+        patched: '2022-10-09T23:13:08.810Z'
+    - gatsby-source-wordpress > deep-map > lodash:
+        patched: '2022-10-09T23:13:08.810Z'
+    - gatsby-source-wordpress > deep-map-keys > lodash:
+        patched: '2022-10-09T23:13:08.810Z'
