@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^3.5.0",
+    "gatsby": "^4.0.0",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.22",
@@ -19,7 +19,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
-    "snyk": "^1.590.0"
+    "snyk": "^1.996.0"
   },
   "keywords": [
     "gatsby"
